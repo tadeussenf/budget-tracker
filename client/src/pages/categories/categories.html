@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Kategorien</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item *ngFor="let category of categories">
+      <ion-avatar item-left>
+        <h1>{{category.name[0]}}</h1>
+      </ion-avatar>
+      <ion-label (click)="onClick(category.name)">{{category.name}}</ion-label>
+      <ion-note item-right>
+        {{category.number}} Einkäufe
+      </ion-note>
+    </ion-item>
+  </ion-list>
+
+  <!--<pre> {{ categories | json }}</pre>-->
+
+</ion-content>

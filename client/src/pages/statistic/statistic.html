@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Ausgabenstatistiken</ion-title>
+    <ion-buttons showWhen="cordova" end>
+      <button ion-button icon-right color="royal" (click)="onShare()">
+        Teilen
+        <ion-icon name="share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="segmentedControl">
+      <ion-segment-button value="pieChart">
+        Nach Kategorien
+      </ion-segment-button>
+      <ion-segment-button value="shopPieChart">
+        Nach Geschäft
+      </ion-segment-button>
+      <ion-segment-button value="barChart">
+        Letzte 12 Monate
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div [ngSwitch]="segmentedControl">
+
+    <div *ngSwitchCase="'pieChart'">
+      <div id="pie-chart" *ngIf="pieChartData">
+        <canvas #pieChart baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'shopPieChart'">
+      <div id="shop-pie-chart" *ngIf="shopPieChartData">
+        <canvas #shopPieChart baseChart
+                [data]="shopPieChartData"
+                [labels]="shopPieChartLabels"
+                [chartType]="shopPieChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+
+    <div *ngSwitchCase="'barChart'">
+      <div id="bar-chart">
+        <canvas #barChart baseChart
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!--<pre>{{pieChartData | json }}</pre>-->
+
+</ion-content>

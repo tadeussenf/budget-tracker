@@ -1,0 +1,757 @@
+*Deeplinker:
+http://plnkr.co/edit/syUH0d6SJd2gAjqaPLwr?p=preview
+
+*Use Google Places API to retrieve currect shop information via:
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyAtZF7qZvWE0AmbMXM_yaGIIInmfnh8WJE&radius=50&types=store&location=48.740119,9.301505
+
+gives:
+{
+   "html_attributions" : [],
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.74015009999999,
+               "lng" : 9.3016939
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74030019999999,
+                  "lng" : 9.302149449999998
+               },
+               "southwest" : {
+                  "lat" : 48.73969980000001,
+                  "lng" : 9.30032725
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "077fdba6eb247f7f8c0faa97659c6bdcbcbc5762",
+         "name" : "SATURN",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115558802004152301026/photos\"\u003eViktor Covasala\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAADfx1IbjCtsxnx7Wc_c7SCgPo6ZGsLzjkYMz1IEMB3nfUme1y9xuxfHDGxago6rTwL3QxPhCQRBJFA8LP9-tB1dzlDejZdJenEB9bdElf8-fLszw5c-ycMEsuiTlzGmyO4XY65yQsWFw8-W08UpZAVlvkPtK7YAu-GmjM5F6DhFREhAdaDUNDK6UoOv6AI4ro9dSGhQhKYz-wRlEKqTJAlppqerf5aGClA",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcR1P0R5ifSzGk",
+         "rating" : 3.3,
+         "reference" : "CmRRAAAAve9uVrcxqKbS_s4auwofUWcfVQKeN2tokocAJIWjTed3SjEM72tefLOkhfjfE7jYA-b0yhTio4bNTo2-ixuWYtx3lqBmAgQnFOVgme36jhW3Tx0FVBQcbG_xlbFu1ADBEhBPOHJ9baLCXWcnufxx1EFBGhRckTtlvbmo_-24gH8ggPEm2DQoYw",
+         "scope" : "GOOGLE",
+         "types" : [
+            "electronics_store",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7400455,
+               "lng" : 9.3018281
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74013805000001,
+                  "lng" : 9.302346100000001
+               },
+               "southwest" : {
+                  "lat" : 48.73976784999999,
+                  "lng" : 9.300274099999996
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "14c6b67fe81b16c814a6e9df37cee5a0fdf1d934",
+         "name" : "dm-drogerie markt",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 5312,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110001334913023837354/photos\"\u003eGianluca Temistocle\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAACpOoMDsy30vza2uTExeSvqXZQX4OMpyJsD4otEPrAqaOmHPfes-9gEFNbvX1EMPPl-1ainmuEzB85y2AQO6QVm8nRW2yY905VgLTHQnTPQGWTIUJeV5TC_BvSbfBZeV39cDbLlbKgNeLrRBVa86cRD6QtTYKvhwOr9hcEWXT2hlEhAlNLVkgMCJgfoXGHBzQ-S-GhTwPq0fHsr8CymttykQaAFDNIItYw",
+               "width" : 2988
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRHDHZCDOIGv8",
+         "reference" : "CmRSAAAAKg7aAFjsmbhuTR1WZbKL6vi_5Mbde45oXNe30lktaWvMRXpBqBWQx08OHzgwRr1Gx27VTiPC7pzIMII7o33kYAEk43My2tG5At4xVKQPnXTfGJV0TUbxWmT0gmYR6NJkEhAe8vQxR8hdFUcIv3rrn7paGhTXSrWNUs0gAiJzo-IwkU2ZuAMu8w",
+         "scope" : "GOOGLE",
+         "types" : [
+            "electronics_store",
+            "grocery_or_supermarket",
+            "health",
+            "food",
+            "home_goods_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.740052,
+               "lng" : 9.3016202
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74015305,
+                  "lng" : 9.302038900000001
+               },
+               "southwest" : {
+                  "lat" : 48.73974885000001,
+                  "lng" : 9.300364099999999
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "36d5a50da008b2305e1cf53279133a23e9a8a7aa",
+         "name" : "Metzgerei Häfele",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 318,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/100855081366024272161/photos\"\u003eMetzgerei Häfele\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAERwcX6MDVKvUOlTXe5mg0-lNLOfPsqKCtyqFwR31x82vYkgyrodtKSnrT389oGUNtaJOnQmSW24mGL_RgWwFS4m8CAqH9RA_y6kleFPV2NNWFpsbAUUn1VPHTZIBPWAKJvTGwJJdv8e9PFKuVx_nbswQCd-JHqcza_xrwfp5aXREhAn5Cn87juLopPgZDrSqq8oGhSmKMxAC1rNd3RzjMrrN-jMT6tBLQ",
+               "width" : 317
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcR_0CL-QQdZK8",
+         "reference" : "CmRSAAAAD9Eaw5H7aBvIXFuOD5ebRg7oStOhub-p1gUB4S_vlkQLEBdi6TtDSVuaw5Ng4aEFHV3xTMeYMptdpkQIKozmXCFRUSVkxvCOS8AuxYpMwLCwu39M977VoFlx5pICpoyBEhBL1ZrYSAq6XGcSZ4dgFi94GhQbfzEkWPk_1iS-LnfVE0PG-Xknew",
+         "scope" : "GOOGLE",
+         "types" : [
+            "meal_takeaway",
+            "restaurant",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399624,
+               "lng" : 9.3016267
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7400134,
+                  "lng" : 9.302044
+               },
+               "southwest" : {
+                  "lat" : 48.7398094,
+                  "lng" : 9.300374799999997
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "1fc43113da085d9b8fbec74626f4598d1be4a41f",
+         "name" : "o2 Partner Shop Esslingen 2",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJR91URDbBmUcRpoipi63Adkg",
+         "reference" : "CmRRAAAA-kE6EQhxgor3jN2EpSMnfwztCITEd1-4ta6WZopt8Feg9U-PngKAPaHeHhvfsw9BBwBU-jaXLMHEf0rk-bisVWorh6y882wqRJL2_z8NMHI8T5-FnUYAEza8XfK99F1fEhDx0y3S6G_oheRsRK4lPrZpGhSQ4Q-Ibdbf2ZYZODaOOhP9LcLwnA",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7402812,
+               "lng" : 9.3013175
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74049669999999,
+                  "lng" : 9.301565749999998
+               },
+               "southwest" : {
+                  "lat" : 48.73963470000001,
+                  "lng" : 9.300572750000001
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "9860db7398920a84723fb4fbc3190a578b4d1d82",
+         "name" : "Apotheke im Es!",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 750,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106311003533739705739/photos\"\u003ePolytimi Svolou\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAOADEWymmof0ofy13Fk2LDTLhWTvILszZJFwSHA6Vcm5eov5TTm2FeF-q_yZR2iia4ScDI02yQkHg27YXE73w2wSM1_9Xc1YlPvse1x5IqzrzyP6tTnQbUEj2rxqiVYxRHYpQvLqlNcH9sr1IMilw9nvpUsg_qomrGSk_gBzxyJXEhBK6RrLIJ6iJYX4x1YlEj-dGhQS6pTMUXY8YmIT8ec3_YGle_H4lw",
+               "width" : 750
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRBn4EkTOx1nU",
+         "reference" : "CmRRAAAA9BE-N0R-C-io57NgUzP5fZ51hfEkn9BSOt91m15w3M6EEyd8ytU5yB-Q5A4T2pLrNL1x3liPUkGY3qTZsLgklBiOaNXiF3na_L9YqxR-0TrJC-2irlznKckft4DPIexEEhAZni6GvKUao4MgpQxNcNEQGhSYWhFhEqxOM7BBE-msisx-plwojw",
+         "scope" : "GOOGLE",
+         "types" : [ "pharmacy", "health", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.74013129999999,
+               "lng" : 9.3015144
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74027199999999,
+                  "lng" : 9.301880199999999
+               },
+               "southwest" : {
+                  "lat" : 48.73970920000001,
+                  "lng" : 9.300416999999998
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "1c4dab1d4b72d875610571367bde32b4c15b16fc",
+         "name" : "Alnatura Super Natur Markt",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 681,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110881089742647650874/photos\"\u003eAlnatura Super Natur Markt\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAAQc00_87Yr5GG-eIFtGO6CDzQQl3_UCZH6Trm38kTOlqfPGuIHoNW9quTJCynGOMfzV34FqtfePWwNQBgVxPh_SM3l-rEgFqJv88q_J1zHBqhDXP3K46BXMkPx3khjSTUnVZXsEymAenowMbYNgXEVxxqfxHd0oAyty0blepGrhEhBu1sjZAQbSzLqGNtIUWEcOGhQBSBPHqKJqo2yUeug3UHt1Gq64lA",
+               "width" : 1024
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRIKpT_TaEwzc",
+         "reference" : "CmRRAAAAo2IxgMLyvRWuVRuCJTQlPJYk5pr13YQGsxCkHLTQ4Lvwz_--86QPAU2ahR3dXi6cDz_rSKGQ47uLXZHzf_8S3mqxXT97Vmbh__A1DUreGtRtP3NamBuSEuAgspxvHaQDEhBg1mYLex3xM7kTAuKG99wVGhSnTZl6Xi9-9Q00CwQ_PcvOTACZdg",
+         "scope" : "GOOGLE",
+         "types" : [
+            "grocery_or_supermarket",
+            "food",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399624,
+               "lng" : 9.3016267
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7400134,
+                  "lng" : 9.302044
+               },
+               "southwest" : {
+                  "lat" : 48.7398094,
+                  "lng" : 9.300374799999997
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "3a65f52d99a5cef8d5d52bdbc6f0aaafa7128f1d",
+         "name" : "Telekom Shop Esslingen",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 768,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113902567018250118693/photos\"\u003eTelekom Shop Esslingen\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAACu9bdWlbaZBL8tZaWUpy5NEQ7xOG8ndrX7NW3kAuq2B7drMGoyfmsFLY13jVFEay3TsfmRmQ2tZV8JoqDJrw6npa-awgn-01-1PpClaY6xxJ1rwgjBz9eQfZhFcPNwSruExwD6WSFigTAGipDWO91uLw9kRoVg35ze3l1N1QSsKEhBV4YFqTr40b8LyBU6ho7nMGhQ0eydgajCsM6uC2luUb8PtDATs_g",
+               "width" : 1024
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcR_Cj-kakPUtk",
+         "reference" : "CmRSAAAA1bAGNep6HuEaoNYyZvpui7Na5jgDID-yyvEdNHgT2HNBKk3wg4y0fTDGHB7yk8IwBRRMnZJDknfijfjf_sscqIxM0JyQ_-zU8auS43uPGm5wBY9tE0OShs9e0L8gTm-WEhDC67-ZznnXHJWh3POmbADIGhRwZ3gSw-BWHo428EJv_XKvBIMR4A",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7403489,
+               "lng" : 9.301718599999997
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74057265,
+                  "lng" : 9.302144399999996
+               },
+               "southwest" : {
+                  "lat" : 48.73967765,
+                  "lng" : 9.300441200000003
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "3cc70cc325e9972b1729703cf97b7e62e0a8915f",
+         "name" : "Hartlieb GmbH",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1365,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117098614547476199638/photos\"\u003eHartlieb GmbH\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAADnXDo7XSmeecXyX-eX4PB_Sb6zbVO_HWV2SsmSoccne93fz0sfTeh91quYWebBzb0rr4Hnhb2fEGPhiPVFKc3ViY9T3ZpHlWj96q00e1zXHvVP5uFrliwk29vELucHevt5CXdegx2bGasV0ptKvEk-N_z8NZiAqJCwgQvix6YvxEhCo4a-JSotifRsUjnzVuNLtGhQIxQrN2m2AFgYJ2IJkAKZglVXwdw",
+               "width" : 1366
+            }
+         ],
+         "place_id" : "ChIJ9SpBnzbBmUcRpLCS-5X_VuI",
+         "reference" : "CmRSAAAAJ1s2PxNziDXKmAJNrHaTB5k68NwN9Oui8L8REzjXS-mtzUZnK6MCVowtTB6tkaufG2e7KaFr_IMv85pvfXqP_BERMZNeokg-h9GPwi2wGvZEkdSEMErB1Z7UBqOJ-9IFEhBIh5DgZ7oDd-4TUUNGptWgGhRY6qj-mJzVD1jdsGZkZHaSUxQhvg",
+         "scope" : "GOOGLE",
+         "types" : [ "health", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 4, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399624,
+               "lng" : 9.3016267
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74011969999999,
+                  "lng" : 9.30292465
+               },
+               "southwest" : {
+                  "lat" : 48.7394905,
+                  "lng" : 9.301194050000001
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "f2176e84b4ef6ca54b4b51f93fa60e6c83008176",
+         "name" : "FashionMania.de GmbH",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJQZWp9TbBmUcRpXu7qm0ai1Q",
+         "reference" : "CmRRAAAAsNAEHfllGbxyE6MfH-uTuPk_j2UnYp5BstpS5fB6MORgzpuTlbCxUkoN0F953s7YRgAPBpyyNx4oiSKpRjqFN5vCABEuQUUnvWGj9c7abJRIpmZJlwsPX4CzHjPQrwRTEhBov1djPvqIMTXtazSickcjGhSYGdjyszfloaC-I80rS4Jbvv7G_Q",
+         "scope" : "GOOGLE",
+         "types" : [ "clothing_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Bahnhofstraße 13/1, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7401863,
+               "lng" : 9.301485799999998
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7403258,
+                  "lng" : 9.301639849999997
+               },
+               "southwest" : {
+                  "lat" : 48.7401398,
+                  "lng" : 9.301023650000001
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "71cf8ff77a460e744454d3682ecaea1f80361bb2",
+         "name" : "JACK & JONES",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 600,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/118102496716759805881/photos\"\u003eJACK &amp; JONES\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAO_o_JtLwiEGbmJWckLsZJ7xzwkEK_PL5iVYL-Ny8Q7WGOMf_8QglZlwxnZSwzBQ0UxL1_QlCYrqgRqbeAuQvplxuGoaz-rjZw8bIzLEz1JoJfbJiASs5Ont2wMIMhoq4sAU2ujIHy8g-ydGXUzpFJ2CQj5yXREHlAq9nzrNeoD5EhD2ASZnbgmLGYASh069c578GhTEFKuhTIeFlnBRPPuW7YxJ0cDYTA",
+               "width" : 600
+            }
+         ],
+         "place_id" : "ChIJC2-6XTbBmUcRTf1ftQEQYY4",
+         "reference" : "CmRSAAAAnbudwchBaLiD5pUgX2x900ZsjZYSeK0jB2PVQJGwyEf5M-udOkDkbBeHw2mAfFAGvP-aUytY-qPDQA9GQYQfeKswvx3cTW3itPblfSwpbPI6iLbIJmnB3CM08s6ewRGHEhD-Omw_P-YUSsLWtPxCMdmmGhSofYinrV6OvEUSCTCvbxViZhzPaQ",
+         "scope" : "GOOGLE",
+         "types" : [ "clothing_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399624,
+               "lng" : 9.3016267
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74028085000002,
+                  "lng" : 9.3018982
+               },
+               "southwest" : {
+                  "lat" : 48.73985625,
+                  "lng" : 9.300812199999999
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "db692074a11339b2bc85b791b6fa0c2ab66e382e",
+         "name" : "VERO MODA",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/107728267122405785319/photos\"\u003eVERO MODA\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAPVqCDxjUKEZjxM-DYN-C1qJNGpN_3RUImKNMLKhwsP8cmlw8HAeQ3DJ-4w4VFZhzLo8cqfEjYIvhFVYgoIS0VOBeqKHDBzqm9K3_19zdq-O6ila2Ai-rKPSwWJ5gRTTvaJEkT9PgS2tPDpCQ0kQcIjetvsnf_uCaRStgN2lWNzCEhCxzQzU3dVCJ9Y8fn4-t_c4GhQb8dQUqGWdNCDT5nFfBSd0f4Lkow",
+               "width" : 1000
+            }
+         ],
+         "place_id" : "ChIJaYRdXDbBmUcRpDTPR3e5rt4",
+         "reference" : "CmRSAAAAzuSThgpq9zbLSbqwHryoCbsURPAY14721zwR8vgrbbJpuUhLEa-fWToeS7zqTSBgBYuMU92Ef8eZMtGegWTMcPIrqwUTIdDmNpT4s4NJrndPuAmtaFO8YkpTnkkSsE3_EhAEh62COaivRk67pwK14EBBGhR2KkgmRzyDKiq5nCbV3aRjBOMWeQ",
+         "scope" : "GOOGLE",
+         "types" : [ "clothing_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Strasse 2 73728, Esslingen"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399285,
+               "lng" : 9.3017453
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7401619,
+                  "lng" : 9.30263195
+               },
+               "southwest" : {
+                  "lat" : 48.7392283,
+                  "lng" : 9.30144975
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "5071f4db23e14cf110b6521b88e5d1d3e4a32743",
+         "name" : "H&M",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJdWKK9zbBmUcRe17jd6nnW_M",
+         "price_level" : 1,
+         "reference" : "CmRSAAAA9bA546J7EUx8qB1BUcn-NUk8NJhqsrQfVdItMlL_0GRIOI1QCy9GmnNo1303kMiKAxP_Ms6DBEcbKjajM68ZjPaMNdWb2uJsiDgJH7Xodz-XE5Mjml3mao23Dyx3Mp_2EhBjxBUeCVPKJG-55pSkPxuHGhQT9_WrVOaWO2JwGS7yRXVM01adTA",
+         "scope" : "GOOGLE",
+         "types" : [ "clothing_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "DAS ES!, Bahnhofstraße 5, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7398005,
+               "lng" : 9.301103899999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.73995515,
+                  "lng" : 9.301235799999997
+               },
+               "southwest" : {
+                  "lat" : 48.73974895000001,
+                  "lng" : 9.300708200000003
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "4e6bc4bb7e1d48e3f837702bfd2e7c20b9eee5ce",
+         "name" : "Tamaris Schuhe",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 516,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/103498373869855388820/photos\"\u003ePatrick Schreiber\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAFqMx59M-ihLQ80ApW7mpfJs87QY8G36sPbHb0Pn0TNBMVFZ7hhGjyNM2QPBZv8pPgkKCurp0B7-JauWYLklYo7oblKLJmxJouGJTPmxrBNgXWr0AjdG1uZ3SbLZEkFfZZZVB1Z7PYf-6xtNJDwEf9k20F1ow_Y7Am-_f6FJcDqCEhADF1VbNQfhzPeNHzePlNl3GhQV5xrJb1Of6csyX9opprX5Yn1CwA",
+               "width" : 824
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRFUZ1TsV1VN4",
+         "reference" : "CmRSAAAAdWugoo7x2S2Xyw1dHNTU99EI2dU_qDka-q1FQTsX0VzDOK8JBmHD3M7qVABAkITg-_yWTMNBLd-xuKizvlUz3tvRea9Xfqk6PP_YpVzK0WeFyik0zMCPH_QPD2nx2-b4EhAz-LFkHMMVNsLifppbnFDhGhRh5uat58ZNlK8hGoloIonrQ_-5Bg",
+         "scope" : "GOOGLE",
+         "types" : [ "shoe_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.73980230000001,
+               "lng" : 9.3010257
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.739937,
+                  "lng" : 9.301142500000001
+               },
+               "southwest" : {
+                  "lat" : 48.73975740000002,
+                  "lng" : 9.300675299999995
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "50c7dce65d13b13851b9b0ee1bdd3c81aa7bfef1",
+         "name" : "Parfümerie Douglas",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 500,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115764860198790511315/photos\"\u003eParfümerie Douglas\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAN5hiz8a0JnP9_9ZsrD0yij4nVSAmuwLCTIzavGj6GokRENF5e8JueFk0SYTcTecjGhYrx5v59dQbi5gCnLQLuqohJte0GPnaAyBGys8Zn41129NAHSnVEGKW-nDOtw3i7Sq5nA1TqpWtkI4Zzko004thuYSwjm2_TDzhuo8Nh6NEhAjRd_1fJbZYCZlbFo2lJ4uGhS3uayHZjZ0TCSAOOTOMP0b1iVgpA",
+               "width" : 500
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRyBkwXoHNXwc",
+         "reference" : "CmRRAAAA52-MBKsUztzeAi4Zo9jh_2GDN88_znJr2qhNUTV_97MkRXXG7dchdVDIV7W_ksDs8XeDhxBpb1ecOoOTgs3wkhSPcvmhIvx85tKIrKVJtdukZn9vBqnUE-6XnbOYtRpcEhDF6zek98i0Ql3hyCEPvGdpGhTSDt6F74LA4_bZxs0VD1jiKE_GWA",
+         "scope" : "GOOGLE",
+         "types" : [ "clothing_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.739802,
+               "lng" : 9.301025999999998
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.73992245,
+                  "lng" : 9.301128499999997
+               },
+               "southwest" : {
+                  "lat" : 48.73976184999999,
+                  "lng" : 9.3007185
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "de7b3e5eb5f8e483d03b004d02cfce42b60214c5",
+         "name" : "Shoe4You",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 921,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111297856471206272747/photos\"\u003eShoe4You\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAKaWx6St6r-O6FTu8XMqdWuRdw8geOpi00r8qmjvcHtKGJALCvbX6kzqgZvVOX2JNA14e_l_-la4e4huMwghKGuPCD-bvtzWbW9GwX7-F2WGKJaJs1g3v1B-2jz9jgO_UTfu3bchKz8Pq-zaNIyYJIF1JDU3trdMPdaGYgnd0N8pEhBS5pN9sFXTGeD35klV97C5GhT35I8MVMo3qf6X3ANJ4wJYiGlBlw",
+               "width" : 921
+            }
+         ],
+         "place_id" : "ChIJR91URDbBmUcRH9vk6NKoKO8",
+         "reference" : "CmRSAAAARus3ubMg9ZwkBe15t2RnTrmz1IL9Nbt4bSBW1kNBYiduS6GBCBm05Hzg-SLyuuZU-Pti17jT4qRaDz8akNShh28WliDEZjmxxyMWdadmqYSOGHfHtXhyXwD5vQiBqzxcEhC-ppP6VYshhLyMBUbf_p7SGhTxLJa_b3LX_XbYAgMg1GonNYeDSg",
+         "scope" : "GOOGLE",
+         "types" : [ "shoe_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.73980230000001,
+               "lng" : 9.3010257
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.739937,
+                  "lng" : 9.301142500000001
+               },
+               "southwest" : {
+                  "lat" : 48.73975740000002,
+                  "lng" : 9.300675299999995
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "acba7926745fa84a5dc96dc02f7d3fcf294befba",
+         "name" : "Coconino im ES GmbH",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJR91URDbBmUcR4qBaVmDSnCM",
+         "reference" : "CmRRAAAA3GoBt7ygdjui6bI2mZ88EazlQuJhhdW3wmemANjY7i2tYEyM0j6nheWLPiIpZUJM4Zf4Zkj8S_BoVLRcJir6LB9vxX8xFr_Jaqtf6pjk3XeJ4YCSoM_YrlIb55_Va8qREhBvhyQPMNm2qv_HimfQfs5GGhT8ZfwwEVHmhmR--ZW5wjaMS1Co5A",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399624,
+               "lng" : 9.3016267
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74028085000002,
+                  "lng" : 9.3018982
+               },
+               "southwest" : {
+                  "lat" : 48.73985625,
+                  "lng" : 9.300812199999999
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "c45f6ac12bbba65ef2fe82902167a729e26177bf",
+         "name" : "Bijou Brigitte modische Accessoires AG",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJaYRdXDbBmUcRjpyAp1mi49I",
+         "reference" : "CmRSAAAAyy32b59xzTe_fzuKngaWhbxJ-wsjEfrcx6SCce6VKdH_KNK64eB2Kwmz8zuVuzqUOOik-OZAafnbFO1dRY514VIlrC-VLDjza6wvC2Fa6wlHcBiqXgv87V-KNKMe3ITwEhD6Ur7zWcrk3XgGpSj0F8UZGhRlwBmwJMSLZzVNU-wR1yCh_p9-hA",
+         "scope" : "GOOGLE",
+         "types" : [ "jewelry_store", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Das ES, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.73995720000001,
+               "lng" : 9.3016316
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.74038004999998,
+                  "lng" : 9.301876600000002
+               },
+               "southwest" : {
+                  "lat" : 48.73981625000001,
+                  "lng" : 9.3008966
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "88ff4d611f8504071e4a0009e3c91e44b6ec2447",
+         "name" : "Metzgerei Häfele",
+         "place_id" : "ChIJewzB2iTnC0ERF-k3juwId2s",
+         "reference" : "CmRRAAAABuEK7C-U7_OXs-lwNBrJwetr8mpMACh7IcCyF08AMWLDwjfcJq2YpBHsmk8i22GG3DeaWcUHy_zxk1gDv3YeTFH1prP8okSvyyopM4I9XLNgQW8vAJG1hw9hCqoW6B7QEhCbTYPmnvYqODN3SobE9YXwGhR_F4AGA6U2pbg_ho7qJPtzFR226w",
+         "scope" : "GOOGLE",
+         "types" : [ "food", "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.7399552,
+               "lng" : 9.301626699999998
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7404562,
+                  "lng" : 9.301868449999995
+               },
+               "southwest" : {
+                  "lat" : 48.73978819999999,
+                  "lng" : 9.300901450000003
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+         "id" : "7ccb932ab75ae2cb20975c482fe2f34ae7dbf97a",
+         "name" : "Coconino im ES GmbH",
+         "place_id" : "ChIJJ2TP2iTnC0ERfXSIJzhu5TQ",
+         "reference" : "CmRRAAAAaVNIoabSdcg33SxgIY74pzeTwq74GeYLWBL2CW14UYDjGdUMENEJYQ0JZ6Rrz5mJtUalgJgk9iudrPoJtwgTpJ5L13AW1Ev1D2AhEI0AOSquARKRH1CXygvUpb4FUC9HEhDJPk18aP9GFWlvG18kpbNIGhRtX74NaOf3WU8wn5m8osb5JmAkZA",
+         "scope" : "GOOGLE",
+         "types" : [ "store", "point_of_interest", "establishment" ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 48.73980230000001,
+               "lng" : 9.3010257
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.7399223,
+                  "lng" : 9.301128050000001
+               },
+               "southwest" : {
+                  "lat" : 48.73976230000002,
+                  "lng" : 9.30071865
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "0dc9966d94984dcd1eb65b6012d13f97ea489ab7",
+         "name" : "Wissmach Modefilialen GmbH",
+         "place_id" : "ChIJR91URDbBmUcRzm329OHasvo",
+         "reference" : "CmRSAAAA04cFE21BYGZPhx8GfBP-6cxclJs0PTNoPMw3vxepBh6PYZoapZeToAZVaeVtfV0emSk-SyE752rrwotvON4FTU__Cl2wMzZm6veJwtuv1u6_Z3wF5c6N6W2DWXDZUmlREhAy7qPgTRWMJ71VkfFBqMugGhS3enB31XmTNqiMtY3hT0wjF1kezw",
+         "scope" : "GOOGLE",
+         "types" : [
+            "beauty_salon",
+            "clothing_store",
+            "store",
+            "point_of_interest",
+            "establishment"
+         ],
+         "vicinity" : "Berliner Straße 2, Esslingen am Neckar"
+      }
+   ],
+   "status" : "OK"
+}

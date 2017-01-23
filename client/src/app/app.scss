@@ -1,0 +1,115 @@
+// http://ionicframework.com/docs/v2/theming/
+
+.gray {
+  color: #9f9f9f;
+}
+
+// do not show menuToggle if page is loaded in modal
+.modal-wrapper {
+  button[menutoggle] {
+    display: none;
+  }
+}
+
+ion-row[wrap] {
+  flex-wrap: wrap-reverse;
+}
+
+ion-item {
+  ion-avatar {
+    h1 {
+      color: white;
+      background-color: color($colors, primary);;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// sidebar open on small screens
+@media(min-width: 1200px) {
+  ion-menu, ion-menu[type=reveal] {
+    z-index: 80;
+    display: block;
+    right: inherit;
+    width: 310px; // enough space for box-shadow
+  }
+
+  button[menutoggle] {
+    display: none;
+  }
+
+  .fixed-content {
+    bottom: 56px;
+  }
+
+  .scroll-content {
+    overflow-y: auto;
+    margin-top: 0 !important;
+  }
+
+  .menu-inner {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(0) !important;
+
+    > ion-header {
+      position: relative;
+    }
+
+    > ion-content {
+      position: relative;
+    }
+  }
+
+  .ion-page {
+    left: 304px;
+    padding-right: 304px;
+    > ion-header {
+      position: relative;
+    }
+
+    > ion-content {
+      position: relative;
+      //max-width: 1070px;
+      padding-right: 150px;
+      padding-left: 150px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  ion-row[wrap] {
+    flex-wrap: wrap;
+  }
+
+  ion-col {
+    flex: 0;
+  }
+
+  ion-modal {
+    .ion-page {
+      left: 0;
+      padding-right: inherit;
+    }
+  }
+}
+
+// end sidebar open on small screens
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
