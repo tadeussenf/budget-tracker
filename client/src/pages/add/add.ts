@@ -75,9 +75,7 @@ export class AddPage implements OnInit {
         })
         .subscribe((res: any) => {
           res = JSON.parse(res._body);
-          console.log(res);
           if (res.status === "ZERO_RESULTS") {
-            console.log("true");
             let shopNameControl = <FormGroup>this.addItemForm.controls['shopName'];
             shopNameControl.setValue(<any>"Kein Geschäft im Umkreis gefunden");
           }
