@@ -25,7 +25,7 @@ export class StorageService {
             productName: "Coffee-To-Go",
             price: 3.99,
             category: "ToGo",
-            date: new Date("2016-12-16T17:17:36.675Z"),
+            date: new Date("2017-01-16T17:17:36.675Z"),
             shopAdress: "Schmidener Straße 227, 70374 Stuttgart",
             shopName: "Bäckerei Stefansbäck"
           },
@@ -33,7 +33,7 @@ export class StorageService {
             productName: "Coffee-To-Go",
             price: 2.99,
             category: "ToGo",
-            date: new Date("2016-11-16T17:17:36.675Z"),
+            date: new Date("2017-01-16T17:17:36.675Z"),
             shopAdress: "Schmidener Straße 227, 70374 Stuttgart",
             shopName: "Bäckerei Stefansbäck"
           },
@@ -41,7 +41,7 @@ export class StorageService {
             productName: "Coffee-To-Go",
             price: 1.99,
             category: "ToGo",
-            date: new Date("2016-10-16T17:17:36.675Z"),
+            date: new Date("2017-01-16T17:17:36.675Z"),
             shopAdress: "Schmidener Straße 227, 70374 Stuttgart",
             shopName: "Bäckerei Stefansbäck"
           },
@@ -49,7 +49,7 @@ export class StorageService {
             productName: "Pullover",
             price: 29.95,
             category: "Kleidung",
-            date: new Date("2016-12-16T17:17:36.675Z"),
+            date: new Date("2017-01-16T17:17:36.675Z"),
             shopAdress: "Schmidener Straße 227, 70374 Stuttgart",
             shopName: "Aldi"
           },
@@ -57,7 +57,7 @@ export class StorageService {
             productName: "Pullover",
             price: 29.95,
             category: "Kleidung",
-            date: new Date("2016-12-16T17:19:36.675Z"),
+            date: new Date("2017-01-16T17:19:36.675Z"),
             shopAdress: "Schmidener Straße 227, 70374 Stuttgart",
             shopName: "Aldi"
           }

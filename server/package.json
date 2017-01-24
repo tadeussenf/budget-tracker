@@ -8,7 +8,7 @@
     "typings": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Christoph Strauß <info@typescriptusers.de>",
+  "author": "Christoph Strauß <tadeussenf@fastmail.fm>",
   "license": "MIT",
   "dependencies": {
     "bluebird": "^3.3.5",

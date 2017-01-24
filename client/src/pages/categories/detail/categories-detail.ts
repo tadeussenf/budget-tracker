@@ -33,10 +33,7 @@ export class CategoriesDetail implements OnInit {
       this.storage.getItem('items').then((items) => {
         this.items = _.groupBy(items, 'category')[this.category];
       });
-
     }
-
-
   }
 
   onRemove(date: Date) {

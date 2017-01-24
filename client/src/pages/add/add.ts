@@ -51,7 +51,6 @@ export class AddPage implements OnInit {
     })
   }
 
-  // todo: abstract me away in some service
   getGeolocation() {
     if (navigator.geolocation) {
       // Will use navigator.geolocation if it exists
