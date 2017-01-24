@@ -45,6 +45,7 @@
 
     <h3>Ort</h3>
     <p>{{addItemForm.value.shopName}}</p>
+    <p>GPS-Koordinaten: {{lat}} {{lng}}</p>
 
     <button ion-button (click)="onSubmit()" [disabled]="!addItemForm.valid">Speichern</button>
   </form>

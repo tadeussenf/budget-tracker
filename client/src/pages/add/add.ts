@@ -15,6 +15,8 @@ import {Http} from "@angular/http";
 })
 export class AddPage implements OnInit {
   @Input() addItemForm: FormGroup;
+  lat: string;
+  lng: string;
   model: Product; // Product
   categories: string[];
   focusModel: any = {
@@ -55,34 +57,43 @@ export class AddPage implements OnInit {
     if (navigator.geolocation) {
       // Will use navigator.geolocation if it exists
       Geolocation
-        .getCurrentPosition({
-          maximumAge: 0, timeout: 15000, enableHighAccuracy: true
+      .getCurrentPosition({
+        maximumAge: 0, timeout: 15000, enableHighAccuracy: true
+      })
+      .then((result: any) => {
+        let longitudeControl = <FormGroup>this.addItemForm.controls['longitude'];
+        longitudeControl.setValue(result.coords.longitude);
+        let latitudeControl = <FormGroup>this.addItemForm.controls['latitude'];
+        latitudeControl.setValue(result.coords.latitude);
+
+        this.lat = result.coords.latitude;
+        this.lng = result.coords.longitude;
+
+        this.http.post('https://rly.lepus.uberspace.de/budget/api/test/location', {
+          latitude: result.coords.latitude,
+          longitude: result.coords.longitude
         })
-        .then((result: any) => {
-          let longitudeControl = <FormGroup>this.addItemForm.controls['longitude'];
-          longitudeControl.setValue(result.coords.longitude);
-          let latitudeControl = <FormGroup>this.addItemForm.controls['latitude'];
-          latitudeControl.setValue(result.coords.latitude);
+        .subscribe((res: any) => {
+          res = JSON.parse(res._body);
+          console.log(res);
+          if (res.status === "ZERO_RESULTS") {
+            console.log("true");
+            let shopNameControl = <FormGroup>this.addItemForm.controls['shopName'];
+            shopNameControl.setValue(<any>"Kein Geschäft im Umkreis gefunden");
+          }
 
-          // todo: this needs to be done on server
-          this.http.post('https://rly.lepus.uberspace.de/budget/api/test/location', {
-            latitude: result.coords.latitude,
-            longitude: result.coords.longitude
-          })
-            .subscribe((res: any) => {
-              res = JSON.parse(res._body);
-              if (res.results) {
+          if (res.status === "OK" && res.results) {
 
-                let shopAdressControl = <FormGroup>this.addItemForm.controls['shopAdress'];
-                shopAdressControl.setValue(res.results[0].vicinity);
+            let shopAdressControl = <FormGroup>this.addItemForm.controls['shopAdress'];
+            shopAdressControl.setValue(res.results[0].vicinity);
 
-                let shopNameControl = <FormGroup>this.addItemForm.controls['shopName'];
-                shopNameControl.setValue(res.results[0].name);
-              } else {
-                console.log('error retrieving current location\'s name');
-              }
-            });
-        }).catch((error) => {
+            let shopNameControl = <FormGroup>this.addItemForm.controls['shopName'];
+            shopNameControl.setValue(res.results[0].name);
+          } else {
+            console.log('error retrieving current location\'s name');
+          }
+        });
+      }).catch((error) => {
         console.log('Error getting location', error);
       });
     }
